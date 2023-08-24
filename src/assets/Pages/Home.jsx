@@ -13,6 +13,14 @@ import potato from "../img/potato.jpg";
 import rice from "../img/Rice.jpg";
 import tea from "../img/tea.jpg";
 import turmeric from "../img/turmeric.jpg";
+import productgrain from "../img/grains-and-cereal.jpg";
+import productpulses from "../img/pulses.jpg";
+import productspices from "../img/spices.jpg";
+import productfruits from "../img/fruits.jpg";
+import productvegetable from "../img/vegetables.jpg";
+import productoilseed from "../img/oilseeds.jpg";
+import productfloriculture from "../img/floriculture.jpg";
+import productherb from "../img/herbs.jpg";
 
 import "./Home.css";
 
@@ -35,6 +43,19 @@ const responsive = {
 };
 
 const Home = () => {
+  const cardData = [
+    { title: "Vegetable", imageSrc: "https://via.placeholder.com/200x200" },
+    { title: "Oil Seeds", imageSrc: "https://via.placeholder.com/200x200" },
+    { title: "Floriculture", imageSrc: "https://via.placeholder.com/200x200" },
+    { title: "Herbs", imageSrc: "https://via.placeholder.com/200x200" },
+    { title: "Spices", imageSrc: "https://via.placeholder.com/200x200" },
+    { title: "Fruits", imageSrc: "https://via.placeholder.com/200x200" },
+    { title: "Pulses", imageSrc: "https://via.placeholder.com/200x200" },
+    {
+      title: "Grain and Cereal",
+      imageSrc: "https://via.placeholder.com/200x200",
+    },
+  ];
   return (
     <>
       <div id="carouselExample" className="carousel slide pb-5">
@@ -159,22 +180,22 @@ const Home = () => {
         </div>
       </section>
 
-      <section class="fruits-choose-area">
-        <div class="container">
-          <div class="row choose-row">
-            <div class="">
-              <div class="fruits-choose-wrapper-all">
-                <div class="fruits-choose-title">
+      <section className="fruits-choose-area">
+        <div className="container">
+          <div className="row choose-row">
+            <div className="">
+              <div className="fruits-choose-wrapper-all">
+                <div className="fruits-choose-title">
                   <h2>WHY CHOOSE US ?</h2>
                 </div>
-                <div class="row mr50">
-                  <div class="col-sm-6">
-                    <div class="fruits-choose-wrapper">
-                      <div class="single-fruits-choose landscape-single-fruit">
-                        <div class="fruits-choose-serial">
+                <div className="row mr50">
+                  <div className="col-sm-6">
+                    <div className="fruits-choose-wrapper">
+                      <div className="single-fruits-choose landscape-single-fruit">
+                        <div className="fruits-choose-serial">
                           <h3>01</h3>
                         </div>
-                        <div class="fruits-choose-content">
+                        <div className="fruits-choose-content">
                           <h4>Get Buyers for Your Food Products</h4>
                           <p>
                             No matter the type of food or spice you plan on
@@ -183,11 +204,11 @@ const Home = () => {
                           </p>
                         </div>
                       </div>
-                      <div class="single-fruits-choose">
-                        <div class="fruits-choose-serial">
+                      <div className="single-fruits-choose">
+                        <div className="fruits-choose-serial">
                           <h3>02</h3>
                         </div>
-                        <div class="fruits-choose-content">
+                        <div className="fruits-choose-content">
                           <h4>Best quality food trading services</h4>
                           <p>
                             Our stringent policies make sure that food handling
@@ -196,11 +217,11 @@ const Home = () => {
                           </p>
                         </div>
                       </div>
-                      <div class="single-fruits-choose">
-                        <div class="fruits-choose-serial">
+                      <div className="single-fruits-choose">
+                        <div className="fruits-choose-serial">
                           <h3>03</h3>
                         </div>
-                        <div class="fruits-choose-content">
+                        <div className="fruits-choose-content">
                           <h4>Global Presence</h4>
                           <p>
                             Even if you are planning to export across multiple
@@ -212,13 +233,13 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6">
-                    <div class="fruits-choose-wrapper">
-                      <div class="single-fruits-choose landscape-single-fruit">
-                        <div class="fruits-choose-serial">
+                  <div className="col-sm-6">
+                    <div className="fruits-choose-wrapper">
+                      <div className="single-fruits-choose landscape-single-fruit">
+                        <div className="fruits-choose-serial">
                           <h3>04</h3>
                         </div>
-                        <div class="fruits-choose-content">
+                        <div className="fruits-choose-content">
                           <h4>
                             Market Analysis &amp; Up-to-date Market Information
                           </h4>
@@ -230,11 +251,11 @@ const Home = () => {
                           </p>
                         </div>
                       </div>
-                      <div class="single-fruits-choose">
-                        <div class="fruits-choose-serial">
+                      <div className="single-fruits-choose">
+                        <div className="fruits-choose-serial">
                           <h3>05</h3>
                         </div>
-                        <div class="fruits-choose-content">
+                        <div className="fruits-choose-content">
                           <h4>Reliable &amp; Trusted Services</h4>
                           <p>
                             Trust is a pillar of our services. Our transparent
@@ -243,11 +264,11 @@ const Home = () => {
                           </p>
                         </div>
                       </div>
-                      <div class="single-fruits-choose">
-                        <div class="fruits-choose-serial">
+                      <div className="single-fruits-choose">
+                        <div className="fruits-choose-serial">
                           <h3>06</h3>
                         </div>
-                        <div class="fruits-choose-content">
+                        <div className="fruits-choose-content">
                           <h4>
                             Save your time &amp; cost for searching markets
                           </h4>
@@ -264,6 +285,49 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="product-style-area pt-80 pb-30" id="product-range">
+        <div className="container1">
+          <div className="section-title-furits text-center mb-95">
+            <img
+              className=" lazyloaded"
+              data-src={icon}
+              alt="Product range"
+              src={icon}
+            />
+            <h2>Our Product Range</h2>
+          </div>
+
+          <div className="text-center">
+            <a href="/product-range/">
+              <button type="button" className="range-button">
+                {" "}
+                View More
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="banner-area" id="top-space">
+        <div className="row">
+          <div className="col-sm-2" />
+          <div className="col-sm-8">
+            <div className="embed-responsive embed-responsive-16by9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube-nocookie.com/embed/s7CopnLJASo?si=eORczkO36d0O39AB"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+          <div className="col-sm-2" />
         </div>
       </section>
     </>
