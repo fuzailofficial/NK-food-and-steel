@@ -1,26 +1,26 @@
 import React from "react";
-import slider1 from "../img/slider-1.jpg";
-import slider2 from "../img/slider-2.jpg";
-import slider3 from "../img/slider-3.jpg";
-import icon from "../img/49.png";
+import slider1 from "../../img/slider-1.jpg";
+import slider2 from "../../img/slider-2.jpg";
+import slider3 from "../../img/slider-3.jpg";
+import icon from "../../img/49.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import coconut from "../img/coconut.jpg";
-import coffee from "../img/coffee-beans.jpg";
-import cumin from "../img/cumin.jpg";
-import onion from "../img/Onion.jpg";
-import potato from "../img/potato.jpg";
-import rice from "../img/Rice.jpg";
-import tea from "../img/tea.jpg";
-import turmeric from "../img/turmeric.jpg";
-import productgrain from "../img/grains-and-cereal.jpg";
-import productpulses from "../img/pulses.jpg";
-import productspices from "../img/spices.jpg";
-import productfruits from "../img/fruits.jpg";
-import productvegetable from "../img/vegetables.jpg";
-import productoilseed from "../img/oilseeds.jpg";
-import productfloriculture from "../img/floriculture.jpg";
-import productherb from "../img/herbs.jpg";
+import coconut from "../../img/coconut.jpg";
+import coffee from "../../img/coffee-beans.jpg";
+import cumin from "../../img/cumin.jpg";
+import onion from "../../img/Onion.jpg";
+import potato from "../../img/potato.jpg";
+import rice from "../../img/Rice.jpg";
+import tea from "../../img/tea.jpg";
+import turmeric from "../../img/turmeric.jpg";
+import productgrain from "../../img/grains-and-cereal.jpg";
+import productpulses from "../../img/pulses.jpg";
+import productspices from "../../img/spices.jpg";
+import productfruits from "../../img/fruits.jpg";
+import productvegetable from "../../img/vegetables.jpg";
+import productoilseed from "../../img/oilseeds.jpg";
+import productfloriculture from "../../img/floriculture.jpg";
+import productherb from "../../img/herbs.jpg";
 
 import "./Home.css";
 
@@ -43,27 +43,16 @@ const responsive = {
 };
 
 const Home = () => {
-  const cardData = [
-    { title: "Vegetable", imageSrc: "https://via.placeholder.com/200x200" },
-    { title: "Oil Seeds", imageSrc: "https://via.placeholder.com/200x200" },
-    { title: "Floriculture", imageSrc: "https://via.placeholder.com/200x200" },
-    { title: "Herbs", imageSrc: "https://via.placeholder.com/200x200" },
-    { title: "Spices", imageSrc: "https://via.placeholder.com/200x200" },
-    { title: "Fruits", imageSrc: "https://via.placeholder.com/200x200" },
-    { title: "Pulses", imageSrc: "https://via.placeholder.com/200x200" },
-    {
-      title: "Grain and Cereal",
-      imageSrc: "https://via.placeholder.com/200x200",
-    },
-  ];
   return (
     <>
+      {/* section 1 carousel */}
       <div id="carouselExample" className="carousel slide pb-5">
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img src={slider1} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h5>GLOBAL QUALITY FOOD EXPORTER FROM INDIA</h5>
+              <h1>GLOBAL QUALITY FOOD EXPORTER FROM INDIA</h1>
+              <span style={{ backgroundColor: "#FFFFFF" }}></span>
               <p>
                 We export food including row vegetables, fruits, spices and many
                 more
@@ -96,7 +85,7 @@ const Home = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-
+      {/* section2  Hero section*/}
       <section className="pb-105 mrl-80">
         <div className="container">
           <div className="section-title-furits text-center mb-80">
@@ -106,7 +95,7 @@ const Home = () => {
               alt="leaf-heading"
               src={icon}
             />
-            <h2>Pisum - Global Food Importers &amp; Exporters</h2>
+            <h2>NK Enterprises - Global Food Importers &amp; Exporters</h2>
           </div>
           <p className="text-dark text-justify sectionp">
             “As the ‘land of spices’, India exports tons of various kinds of
@@ -119,7 +108,7 @@ const Home = () => {
           </p>
         </div>
       </section>
-
+      {/* section3 popular prdouct */}
       <section className="product-style-area gray-bg-4 pb-105">
         <div className="container-fluid">
           <div className="section-title-furits bg-shape text-center mb-80">
@@ -179,14 +168,14 @@ const Home = () => {
           </Carousel>
         </div>
       </section>
-
+      {/* section4 Why choose us*/}
       <section className="fruits-choose-area">
         <div className="container">
           <div className="row choose-row">
             <div className="">
               <div className="fruits-choose-wrapper-all">
                 <div className="fruits-choose-title">
-                  <h2>WHY CHOOSE US ?</h2>
+                  <h2>Why choose us ?</h2>
                 </div>
                 <div className="row mr50">
                   <div className="col-sm-6">
@@ -287,9 +276,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      {/* section 5 our product range*/}
       <section className="product-style-area pt-80 pb-30" id="product-range">
-        <div className="container1">
+        <div className="container">
           <div className="section-title-furits text-center mb-95">
             <img
               className=" lazyloaded"
@@ -298,6 +287,52 @@ const Home = () => {
               src={icon}
             />
             <h2>Our Product Range</h2>
+          </div>
+
+          <div className="parent">
+            <Carousel
+              responsive={responsive}
+              autoPlay={true}
+              swipeable={true}
+              draggable={true}
+              showDots={true}
+              infinite={true}
+              partialVisible={false}
+              dotListClass="custom-dot-list-style"
+            >
+              <div className="slider">
+                <img src={productgrain} />
+                <h1 className="img-txt">Grain</h1>
+              </div>
+              <div className="slider">
+                <img src={productpulses} />
+                <h1 className="img-txt">Pulses</h1>
+              </div>
+              <div className="slider">
+                <img src={productspices} />
+                <h1 className="img-txt">spices</h1>
+              </div>
+              <div className="slider">
+                <img src={productfruits} />
+                <h1 className="img-txt">Fruits</h1>
+              </div>
+              <div className="slider">
+                <img src={productvegetable} />
+                <h1 className="img-txt">Vegetable</h1>
+              </div>
+              <div className="slider">
+                <img src={productoilseed} />
+                <h1 className="img-txt">OilSeed</h1>
+              </div>
+              <div className="slider">
+                <img src={productfloriculture} />
+                <h1 className="img-txt">Floriculture</h1>
+              </div>
+              <div className="slider">
+                <img src={productherb} />
+                <h1 className="img-txt">Herb</h1>
+              </div>
+            </Carousel>
           </div>
 
           <div className="text-center">
@@ -310,24 +345,92 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <section className="banner-area" id="top-space">
-        <div className="row">
-          <div className="col-sm-2" />
-          <div className="col-sm-8">
-            <div className="embed-responsive embed-responsive-16by9">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube-nocookie.com/embed/s7CopnLJASo?si=eORczkO36d0O39AB"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+      {/* {section 6 youtube}  */}
+      {/* {section 7 testimonial} */}
+      {/* {section 8 india is best} */}
+      {/* section last */}
+      <section className="newsletter-area bg-img ptb-105">
+        <div className="container">
+          <div className="newsletter-wrapper">
+            <div className="row">
+              <div className="col-lg-4 col-md-4 col-12 mt-6 ">
+                <div className="fruits-newsletter-title">
+                  <span>Submit Your Requirements</span>
+                  <h3>Just One Step Ahead</h3>
+                </div>
+              </div>
+              <div className="col-lg-8 col-md-8 col-12">
+                <div
+                  id="mc_embed_signup"
+                  className="subscribe-form-furits f-right"
+                >
+                  <form
+                    className="kwes-form"
+                    id="subscribe-form"
+                    method="post"
+                    action="https://kwes.io/api/foreign/forms/auNcdNbohnWnDLO83hJq"
+                    noValidate="novalidate"
+                  >
+                    <div
+                      className="kw-alert kw-alert-success"
+                      id="kw-success"
+                      aria-live="assertive"
+                      style={{ display: "none" }}
+                    />
+                    <div className="mc-form">
+                      <input
+                        type="email"
+                        name="EMAIL"
+                        className="EMAIL"
+                        placeholder="Enter Email Address"
+                        autoComplete="off"
+                      />
+                      <div className="clear">
+                        <input
+                          type="submit"
+                          defaultValue="Enquire Now"
+                          value={"Enquiry Now"}
+                          name="subscribe"
+                          id="mc-embedded-subscribe"
+                          className="button enquire-now"
+                        />
+                      </div>
+                    </div>
+                    <small
+                      style={{
+                        display: "block !important",
+                        marginTop: "25px !important",
+                        fontSize: "80% !important",
+                        transform: "initial !important",
+                        opacity: "1 !important",
+                        visibility: "initial !important",
+                        width: "auto !important",
+                        height: "auto !important",
+                        overflow: "initial !important",
+                      }}
+                    >
+                      <a
+                        href="https://kwes.io"
+                        style={{
+                          textDecoration: "underline",
+                          color: "#767676 !important",
+                          display: "block !important",
+                          fontSize: "100% !important",
+                          width: "auto !important",
+                          height: "auto !important",
+                          overflow: "initial !important",
+                        }}
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        Form powered by KwesForms
+                      </a>
+                    </small>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="col-sm-2" />
         </div>
       </section>
     </>

@@ -1,13 +1,14 @@
 import React from "react";
-
+import "./Navbar.css";
+import { Route, Routes, Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            LOGO
-          </a>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary position-static">
+        <div className="container-fluid my-3">
+          <Link className="navbar-brand" to="/">
+            NK Enterprise
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -19,17 +20,20 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+          <div
+            className="collapse justify-content-center navbar-collapse"
+            id="navbarNavDropdown"
+          >
+            <ul className="navbar-nav ">
+              <li className="nav-item ">
+                <Link className="nav-link  " aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/about">
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -99,10 +103,10 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Contact Us
-                </a>
+              <li className="nav-item ">
+                <Link className="nav-link  " aria-current="page" to="contact">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
