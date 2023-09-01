@@ -1,0 +1,209 @@
+@media (min-width: 1200px) and (max-width: 1650px) {
+
+    .breadcrumb-area-contact,
+    .about-banner,
+    .breadcrumb-area-certificates,
+    .breadcrumb-area-listing,
+    .breadcrumb-area-products {
+        background-size: cover;
+    }
+}
+
+.breadcrumb-area-contact {
+    background-image: url(../../img/about-banner.jpg);
+
+}
+
+.breadcrumb-area-contact,
+.about-banner,
+.breadcrumb-area-certificates,
+.breadcrumb-area-listing,
+.breadcrumb-area-products,
+.breadcrumb-area-career {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 208px; */
+    padding: 7% 0;
+}
+
+
+
+.breadcrumb-content {
+    margin-top: 50px;
+}
+
+.breadcrumb-content h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+
+.breadcrumb-content li {
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.breadcrumb-content li a {
+    color: #fff;
+    position: relative;
+    padding-right: 18px;
+}
+
+/* 2nd section */
+@media (min-width: 1200px) and (max-width: 1650px) {
+
+    .mrl-80 {
+        margin: 0 80px;
+    }
+}
+
+.ptb-100 {
+    padding: 100px 0;
+}
+
+@media (min-width: 992px) {
+
+    .col-lg-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .contact-title>h4 {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .single-contact-info {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    .contact-info-icon {
+        width: 35px;
+    }
+
+    .contact-info-icon i {
+        color: #383838;
+        font-size: 22px;
+    }
+
+    .contact-info-text>p {
+        color: #383838;
+        margin: 0;
+    }
+
+    .single-contact-info {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    .kw-alert-success {
+        color: #257942;
+        background-color: #effaf3;
+    }
+
+    .kw-alert {
+        width: 100%;
+        padding: 15px 18px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        display: block;
+        font-weight: normal;
+    }
+
+
+    .mb-10 {
+        margin-bottom: 10px;
+    }
+
+    .contact-input-style label,
+    .contact-textarea-style label {
+        color: #383838;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    .kwes-form .kw-border-success {
+        border: 1px solid #23d160;
+    }
+
+    .contact-input-style input {
+        background: transparent none repeat scroll 0 0;
+        border: 1px solid #ececec;
+        color: #666666;
+        font-size: 14px;
+        height: 35px;
+        padding: 0 20px;
+        width: 100%;
+        line-height: 35px;
+    }
+
+    .countryCode {
+        height: 35px;
+    }
+
+    select {
+        width: 100%;
+        background: #eceff8;
+        border: 2px solid #eceff8;
+        height: 45px;
+        padding-left: 10px;
+        box-shadow: none;
+        font-size: 14px;
+        color: #626262;
+    }
+}
+
+.contact-input-style input {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ececec;
+    color: #666666;
+    font-size: 14px;
+    height: 35px;
+    padding: 0 20px;
+    width: 100%;
+    line-height: 35px;
+}
+
+.contact-textarea-style textarea {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ececec;
+    color: #666666;
+    font-size: 14px;
+    padding: 0 20px;
+    width: 100%;
+    height: 170px;
+    line-height: 35px;
+}
+
+.kwes-enquire-contact-us {
+    background-color: #85bd02;
+    border: medium none;
+    box-shadow: none;
+    color: #ffffff;
+    float: left;
+    font-weight: 600;
+    height: 40px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    width: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0px 7px 0.9px rgba(0, 0, 0, 0.1);
+    height: 55px;
+    line-height: 55px !important;
+    border-radius: 50px;
+    width: 300px;
+}

@@ -52,7 +52,7 @@ const Home = () => {
             <img src={slider1} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h1>GLOBAL QUALITY FOOD EXPORTER FROM INDIA</h1>
-              <span style={{ backgroundColor: "#FFFFFF" }}></span>
+
               <p>
                 We export food including row vegetables, fruits, spices and many
                 more
@@ -389,7 +389,6 @@ const Home = () => {
                         <input
                           type="submit"
                           defaultValue="Enquire Now"
-                          value={"Enquiry Now"}
                           name="subscribe"
                           id="mc-embedded-subscribe"
                           className="button enquire-now"
@@ -422,9 +421,7 @@ const Home = () => {
                         }}
                         target="_blank"
                         rel="noopener"
-                      >
-                        Form powered by KwesForms
-                      </a>
+                      ></a>
                     </small>
                   </form>
                 </div>
